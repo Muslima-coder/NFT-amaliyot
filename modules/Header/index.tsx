@@ -1,4 +1,5 @@
-import { CustomImage } from "@/components"
+import { Button, CustomImage } from "@/components"
+import { SignUpIcon } from "@/icons"
 import Link from "next/link"
 
 const Header = () => {
@@ -9,15 +10,18 @@ const Header = () => {
   }
 
   return (
-    <header className="px-[50px] py-[20px] flex justify-between items-center">
+    <header className="px-[40px] py-[20px]">
+      <div className="containers  flex justify-between items-center">
       <Link href={"/"}>
       <CustomImage src="/site-logo.svg" alt="logo" W={243} H={32}/>
       </Link>
 
-      <div>
+      <div className="flex items-center gap-[30px]">
       <LinkStyle href="/marketplace" title="Marketplace"/>
       <LinkStyle href="/rankings" title="Rankings"/>
       <LinkStyle href="/connect-a-wallet" title="Connect a wallet"/>
+      <Button icon={<SignUpIcon/>} iconPosition="left">Sign Up</Button>
+      </div>
       </div>
     </header>
 
