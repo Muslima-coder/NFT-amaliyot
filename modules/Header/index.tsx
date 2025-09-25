@@ -1,13 +1,16 @@
 import { Button, CustomImage } from "@/components"
-import { SignUpIcon } from "@/icons"
+import { HamburgerIcon, SignUpIcon } from "@/icons"
+import { useTranslations } from "next-intl"
 import Link from "next/link"
+import { ReactNode } from "react"
 
 const Header = () => {
-  const LinkStyle = ({title, href}: {title:string, href:string}) => {
+  const LinkStyle = ({children, href}: {children:ReactNode, href:string}) => {
     return(
-      <Link className="font-semibold text-[16px] text-white hover:text-[#A259FF] duration-500" href={href}>{title}</Link>
+      <Link className="font-semibold text-[16px] text-white hover:text-[#A259FF] duration-500" href={href}>{children}</Link>
     )
   }
+  const t = useTranslations("headerContent")
 
   return (
     <header className="px-[40px] py-[20px]">
@@ -16,11 +19,16 @@ const Header = () => {
       <CustomImage src="/site-logo.svg" alt="logo" W={243} H={32}/>
       </Link>
 
-      <div className="flex items-center gap-[30px]">
-      <LinkStyle href="/marketplace" title="Marketplace"/>
-      <LinkStyle href="/rankings" title="Rankings"/>
-      <LinkStyle href="/connect-a-wallet" title="Connect a wallet"/>
-      <Button icon={<SignUpIcon/>} iconPosition="left">Sign Up</Button>
+      <div className="lg:flex hidden items-center gap-[30px]">
+      <LinkStyle href="/marketplace">{t("marketplace")}</LinkStyle>
+      <LinkStyle href="/rankings">{t("rankings")}</LinkStyle>
+      <LinkStyle href="/connect-a-wallet">{t("connectWallet")}</LinkStyle>
+      <Button icon={<SignUpIcon/>} iconPosition="left">{t("signUp")}</Button>
+      </div>
+      <div className="lg:hidden flex">
+        <button>
+          <HamburgerIcon/>
+        </button>
       </div>
       </div>
     </header>

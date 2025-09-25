@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <div className="py-[40px] !px-[80px] bg-[#3B3B3B] absolute bottom-0 w-full">
       <div className="containers">
-        <div className="flex justify-between">
+        <div className="flex lg:flex-row flex-col justify-between">
             <div className="w-[243px]">
               <Link className="mb-[30px] inline-block" href={"/"}>
                   <CustomImage src="/site-logo.svg" alt="logo" W={243} H={32}/>          
