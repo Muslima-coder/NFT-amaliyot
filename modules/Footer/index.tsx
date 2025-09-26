@@ -6,7 +6,7 @@ import { ReactNode } from "react"
 const Footer = () => {
   const mediaList = [<DiscordIcon/>, <YouTubeIcon/>, <TwitterIcon/>, <InstagramIcon/>]
   return (
-    <div className="py-[40px] !px-[80px] bg-[#3B3B3B] absolute bottom-0 w-full">
+    <div className="py-[40px] !px-[80px] bg-[#3B3B3B]  w-full">
       <div className="containers">
         <div className="flex lg:flex-row flex-col justify-between">
             <div className="w-[243px]">

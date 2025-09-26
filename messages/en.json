@@ -4,5 +4,14 @@
         "rankings":"Rankings",
         "connectWallet":"Connect a wallet",
         "signUp":"Sign Up"
-    }
+    },
+	"heroContent": {
+		"title": "Discover digital art & Collect NFTs",
+		"description": "NFT marketplace UI created with Anima for Figma. Collect, buy and sell art from more than 20k NFT artists.",
+		"heroButton": "Get Started",
+		"totalSale": "Total Sale",
+		"auctions": "Auctions",
+		"artists": "Artists",
+		"imageTitle": "Space Walking"
+	}
 }
