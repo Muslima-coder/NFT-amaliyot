@@ -11,6 +11,7 @@ const HeroContent: FC<{
 	artists: UserType[]
 	totalSale: AuctionsResultType[]
 }> = ({ auctions, artists, totalSale }) => {
+	
 	const t = useTranslations('heroContent')
 
 	return (

@@ -6,7 +6,7 @@ const Hero = async () => {
   const artist = await getRequest("/user?role=ARTIST")
   const totalSale = await getRequest("/auction-result")
 
-  return <HeroContent artists={artist.data} totalSale={totalSale} auctions={auctions.data}/>
+  return <HeroContent artists={artist.data ? artist.data : []} totalSale={totalSale.data ? totalSale.data : []} auctions={auctions.data ? auctions.data : []}/>
 }
 
 export default Hero

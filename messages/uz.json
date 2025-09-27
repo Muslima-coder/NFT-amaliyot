@@ -13,5 +13,27 @@
 		"auctions": "Jami savdo",
 		"artists": "Rassomlar",
 		"imageTitle": "Kosmosdagi sayohat"
+	},
+	"TrendingCollection": {
+		"title": "Zamonaviy Kolleksiya",
+		"description": "Haftalik yangilanadigan eng so'nggi kolleksiyamiz bilan tanishing."
+	},
+	"TopCreators": {
+		"title": "Top yaratuvchilar",
+		"description": "NFT bozoridagi eng yuqori baholangan yaratuvchilarni ko'ring",
+		"button":"Reytinglarni ko'rsatish"
+	},
+	"FooterContent": {
+		"text1": "Figma uchun Anima yordamida yaratilgan NFT marketpleys UI.",
+		"text2": "Hamjamiyatimizga qo'shiling",
+		"marketplace": "Marketpleys",
+		"rankings": "Reytinglar",
+		"connectWallet": "Hamyonni ulash",
+		"text3": "Haftalik xabarnomamizga obuna bo'ling",
+		"text4": "Eksklyuziv aksiyalar va yangilanishlarni to'g'ridan-to'g'ri pochtangizga oling."
+	},
+	"sendEmailContent": {
+		"placeholder":"Emailingizni kiriting",
+		"button":"Obuna bo'lish"
 	}
 }

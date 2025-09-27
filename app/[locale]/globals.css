@@ -9,3 +9,11 @@ body{
     margin: 0 auto;
     padding: 0 0px;
 }
+
+.collection-img-wrapper:hover > img{
+    transform: scale(1.2);
+}
+
+.lang-wrapper:hover > .lang-inner{
+    height: 80px;
+}

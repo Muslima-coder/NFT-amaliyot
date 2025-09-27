@@ -1,4 +1,4 @@
-import { Button, CustomImage } from "@/components"
+import { Button, CustomImage, LanguageConfig,  } from "@/components"
 import { HamburgerIcon, SignUpIcon } from "@/icons"
 import { useTranslations } from "next-intl"
 import Link from "next/link"
@@ -24,6 +24,7 @@ const Header = () => {
       <LinkStyle href="/rankings">{t("rankings")}</LinkStyle>
       <LinkStyle href="/connect-a-wallet">{t("connectWallet")}</LinkStyle>
       <Button icon={<SignUpIcon/>} iconPosition="left">{t("signUp")}</Button>
+      <LanguageConfig/>
       </div>
       <div className="lg:hidden flex">
         <button>
