@@ -1,10 +1,10 @@
-import { CreaterType } from "@/@types/CreatorType"
+import { CreatorType } from "@/@types/CreatorType"
 import { Button, Heading, Text, CreaterCard } from "@/components"
 import { RocketIcon } from "@/icons"
 import { useTranslations } from "next-intl"
 import { FC } from "react"
 
-const CreatorsContent:FC<{creators:CreaterType[]}> = ({creators}) => {
+const CreatorsContent:FC<{creators:CreatorType[]}> = ({creators}) => {
   const t = useTranslations('TopCreators')
 
   return (
@@ -17,7 +17,7 @@ const CreatorsContent:FC<{creators:CreaterType[]}> = ({creators}) => {
             </div>
             <Button icon={<RocketIcon/>} iconPosition="left">{t('button')}</Button>
           </div>
-          <div className="flex justify-between flex-wrap">
+          <div className="flex justify-between flex-wrap gap-[20px]">
               {creators.map((item, index) => <CreaterCard key={item.id} item={item} index={index}/>)}
           </div>
         </div>

@@ -35,5 +35,16 @@
 	"sendEmailContent": {
 		"placeholder": "Введите э почту",
 		"button": "Подписаться"
+	},
+	"CategoriesContent":{
+		"title":"Просмотр категорий"
+	},
+	"NFTContent": {
+		"title":"Откройте больше NFT",
+		"description":"Изучайте новые трендовые NFT",
+		"button":"Посмотреть все"
+	},
+	"AuctionsContent": {
+		"button": "Посмотреть NFT"
 	}
 }

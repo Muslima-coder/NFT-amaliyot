@@ -17,3 +17,17 @@ body{
 .lang-wrapper:hover > .lang-inner{
     height: 80px;
 }
+
+
+.category-card:hover > div > .category-img{
+    filter:  blur(0) !important;
+    transform: scale(1.2);
+}
+
+.category-card:hover > div > .category-icon{
+    transform: scale(0);
+}
+
+.nft-wrapper:hover > div > img{
+    transform: scale(1.2);
+}

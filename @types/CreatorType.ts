@@ -1,4 +1,4 @@
-export interface CreaterType {
+export interface CreatorType {
     id:string,
     username:string,
     email:string,

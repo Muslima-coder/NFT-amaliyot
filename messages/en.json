@@ -35,5 +35,16 @@
 	"sendEmailContent": {
 		"placeholder":"Enter your email here",
 		"button":"Subscribe"
+	},
+	"CategoriesContent":{
+		"title":"Browse Categories"
+	},
+	"NFTContent": {
+		"title":"Discover More NFTs",
+		"description":"Explore new trending NFTs",
+		"button":"See All"
+	},
+	"AuctionsContent":{
+		"button":"See NFT"
 	}
 }

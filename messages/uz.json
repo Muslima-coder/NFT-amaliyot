@@ -35,5 +35,16 @@
 	"sendEmailContent": {
 		"placeholder":"Emailingizni kiriting",
 		"button":"Obuna bo'lish"
+	},
+	"CategoriesContent":{
+		"title":"Kategoriyalarni ko'rish"
+	},
+	"NFTContent": {
+		"title": "Ko'proq NFTlarni kashf eting",
+		"description": "Yangi trenddagi NFTlarni ko'ring",
+		"button": "Hammasini ko'rish"
+	},
+	"AuctionsContent": {
+		"button": "NFTni ko'rish"
 	}
 }
