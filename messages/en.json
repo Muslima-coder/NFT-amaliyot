@@ -46,5 +46,19 @@
 	},
 	"AuctionsContent":{
 		"button":"See NFT"
+	},
+	"WorksContent": {
+		"title":"How it works",
+		"description":"Find out how to get started",
+		"cardTitle1":"Setup Your wallet",
+		"cardText1":"Set up your wallet of choice. Connect it to the Animarket by clicking the wallet icon in the top right corner.",
+		"cardTitle2":"Create Collection",
+		"cardText2":"Upload your work and setup your collection. Add a description, social links and floor price.",
+		"cardTitle3":"Start Earning",
+		"cardText3":"Choose between auctions and fixed-price listings. Start earning by selling your NFTs or trading others."
+	},
+	"WeeklDigestContent":{
+		"title":"Join our weekly digest",
+		"description":"Get exclusive promotions & updates straight to your inbox."
 	}
 }

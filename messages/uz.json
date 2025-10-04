@@ -46,5 +46,19 @@
 	},
 	"AuctionsContent": {
 		"button": "NFTni ko'rish"
+	},
+	"WorksContent": {
+		"title": "Qanday ishlaydi",
+		"description": "Qanday boshlashni bilib oling",
+		"cardTitle1": "Hamyoningizni sozlang",
+		"cardText1": "Tanlagan hamyoningizni yarating va sozlang. Uni yuqori o‘ng burchakdagi hamyon belgisi orqali Animarket’ga ulang.",
+		"cardTitle2": "Kolleksiya yarating",
+		"cardText2": "Ishingizni yuklang va kolleksiyangizni sozlang. Tavsif, ijtimoiy tarmoqlar havolalari va minimal narxni qo‘shing.",
+		"cardTitle3": "Daromad olishni boshlang",
+		"cardText3": "Auksion yoki belgilangan narxda savdoni tanlang. O‘z NFTlaringizni sotish yoki boshqalar bilan savdo qilish orqali daromad oling."
+	},
+	"WeeklDigestContent":{
+		"title": "Haftalik yangiliklarimizga obuna bo'ling",
+		"description": "Maxsus aksiyalar va yangilanishlarni to'g'ridan-to'g'ri pochtangizga oling."
 	}
 }
