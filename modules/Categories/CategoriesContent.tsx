@@ -10,7 +10,7 @@ const CategoriesContent:FC<{categories:CategoryType[]}> = ({categories}) => {
     <section className="py-[80px]">
         <div className="containers">
             <Heading classList="!mb-[60px]" tag="h2">{t("title")}</Heading>
-            <div className="flex justify-between gap-[30px] flex-wrap">
+            <div className="flex md:justify-between justify-center md:gap-[30px] gap-5 flex-wrap">
                 {categories.map(item => <CategoryCard key={item.id} item={item}/>)}
             </div>
         </div>

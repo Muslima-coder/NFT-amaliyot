@@ -7,7 +7,7 @@ body{
 .containers{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 0px;
+    padding: 0 15px;
 }
 
 .collection-img-wrapper:hover > img{
@@ -30,4 +30,13 @@ body{
 
 .nft-wrapper:hover > div > img{
     transform: scale(1.2);
+}
+
+.single-creator-wrapper{
+    background-image: url("/SingleCreatorBg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 320px;
+    width: 100%;
 }

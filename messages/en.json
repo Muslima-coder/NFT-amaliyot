@@ -60,5 +60,24 @@
 	"WeeklDigestContent":{
 		"title":"Join our weekly digest",
 		"description":"Get exclusive promotions & updates straight to your inbox."
+	},
+	"SingleCreatorContent":{
+		"follow":"Follow",
+		"bio":"Bio",
+		"links":"Links",
+		"price":"Price",
+		"highestBid":"Highest Bid"
+	},
+	"SingleRangkings":{
+		"title":"Top Creators",
+		"description":"Check out top ranking NFT artists on the NFT Marketplace.",
+		"today":"Today",
+		"week":"This Week",
+		"month":"This Month",
+		"allTime":"All Time",
+		"artist":"Artist",
+		"change":"Change",
+		"NFTsSold":"NFTs Sold",
+		"volume":"Volume"
 	}
 }

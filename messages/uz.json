@@ -60,5 +60,24 @@
 	"WeeklDigestContent":{
 		"title": "Haftalik yangiliklarimizga obuna bo'ling",
 		"description": "Maxsus aksiyalar va yangilanishlarni to'g'ridan-to'g'ri pochtangizga oling."
+	},
+	"SingleCreatorContent": {
+		"follow": "Obuna bo'lish",
+		"bio": "Biografiya",
+		"links": "Havolalar",
+		"price": "Narx",
+		"highestBid": "Eng yuqori taklif"
+	},
+	"SingleRangkings": {
+		"title": "Eng yaxshi yaratuvchilar",
+		"description": "NFT bozoridagi eng yuqori reytingdagi NFT san’atkorlarini ko‘ring.",
+		"today": "Bugun",
+		"week": "Ushbu hafta",
+		"month": "Ushbu oy",
+		"allTime": "Umumiy",
+		"artist": "San'atkor",
+		"change": "O'zgarish",
+		"NFTsSold": "Sotilgan NFTlar",
+		"volume": "Hajmi"
 	}
 }

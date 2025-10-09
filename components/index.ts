@@ -6,5 +6,6 @@ import SendEmail from "./SendEmail";
 import CreaterCard from "./CreaterCard";
 import CollectionCard from "./CollectionCard";
 import LanguageConfig from "./LanguageConfig";
+import SingleCreatorcard from "./SingleCreatorcard";
 
-export {CustomImage, Button, Text, Heading, SendEmail, CreaterCard, CollectionCard, LanguageConfig}
+export {SingleCreatorcard, CustomImage, Button, Text, Heading, SendEmail, CreaterCard, CollectionCard, LanguageConfig}

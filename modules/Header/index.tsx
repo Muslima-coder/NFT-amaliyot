@@ -21,7 +21,7 @@ const Header = () => {
 
       <div className="lg:flex hidden items-center gap-[30px]">
       <LinkStyle href="/marketplace">{t("marketplace")}</LinkStyle>
-      <LinkStyle href="/rankings">{t("rankings")}</LinkStyle>
+      <LinkStyle href="/rangkings">{t("rankings")}</LinkStyle>
       <LinkStyle href="/connect-a-wallet">{t("connectWallet")}</LinkStyle>
       <Button icon={<SignUpIcon/>} iconPosition="left">{t("signUp")}</Button>
       <LanguageConfig/>

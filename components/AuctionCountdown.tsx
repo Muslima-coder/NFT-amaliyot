@@ -36,7 +36,7 @@ export default function AuctionCountdown() {
   }, [])
 
   return (
-    <div className="flex items-center justify-center">
+    <div className="flex items-center justify-center mb-5">
       <div className="w-full max-w-sm">
         <div className="bg-gradient-to-br bg-[#3B3B3B80] rounded-3xl p-8 shadow-2xl">
           <p className="text-white/90 text-sm font-medium mb-6">Auction ends in:</p>

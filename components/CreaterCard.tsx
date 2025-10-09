@@ -1,3 +1,5 @@
+"use client"
+
 import { API } from "@/hooks"
 import CustomImage from "./CustomImage"
 import Heading from "./Heading"
@@ -6,8 +8,9 @@ import { FC } from "react"
 import { CreatorType } from "@/@types/CreatorType"
 
 const CreaterCard:FC<{item:CreatorType, index:number}> = ({item, index}) => {
+
   return (
-    <div className="w-[240px] relative bg-[#3B3B3B] text-center rounded-[20px] p-[20px]">
+    <div className="w-[240px] cursor-pointer hover:scale-[1.1] shadow-md shadow-transparent hover:shadow-white duration-500 relative bg-[#3B3B3B] text-center rounded-[20px] p-[20px]">
         <CustomImage classList="!mb-[20px] !mx-auto" src={`${API}/file/${item.image}`} alt="image" W={120} H={120}/>
         <Heading classList="!mb-[5px]" tag="h3">{item.username}</Heading>
         <Text classList="!text-[16px]"><span className="text-[#858584]">Total Sales: </span>34.53 ETH</Text>
