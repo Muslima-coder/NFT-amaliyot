@@ -4,8 +4,9 @@ import { useState } from "react"
 import CustomImage from "./CustomImage"
 import Heading from "./Heading"
 import Text from "./Text"
-import { SingleCreatorType, CreatedNFTType } from "@/@types/SingleCreatorType"
+import { SingleCreatorType } from "@/@types/SingleCreatorType"
 import { useTranslations } from "next-intl"
+import SingleCollectionCard from "./SingleCollectionCard"
 
 const SingleCreatorCard = ({ singleData }: { singleData: SingleCreatorType }) => {
 
@@ -46,34 +47,38 @@ const SingleCreatorCard = ({ singleData }: { singleData: SingleCreatorType }) =>
        
       <div className="bg-[#3B3B3B] w-full py-[80px] flex items-center justify-between flex-wrap">
         <div className="containers w-full">
-          {getNFTs().map((nft, index) => (
-          <div key={index} className='w-[330px] nft-wrapper cursor-pointer rounded-[20px] overflow-hidden'>
-            <div className='w-[330px] overflow-hidden h-[296px]'>
-              <CustomImage classList="!duration-300"   src={ activeTab === 'collection'
-                ? `${process.env.NEXT_PUBLIC_API}/file/${nft.images[0]}`
-                : `${process.env.NEXT_PUBLIC_API}/file/${nft.image}` } alt={nft.title || 'NFT'} W={330} H={330}/>
-            </div>
-            <div className='py-[20px] px-[30px] bg-[#2B2B2B]'>
-              <Heading classList='!mb-[5px]'>{nft.title}</Heading>
-              <div className='flex items-center gap-[12px]'>
-                <CustomImage classList="!duration-300" src={`${process.env.NEXT_PUBLIC_API}/file/${singleData.image}`} alt={nft.title} W={24} H={24}/>
-                <Text>{singleData.username}</Text>
-              </div>
-              <div className='flex justify-between mt-[25px]'>
-                <div>
-                  <Text classList='!text-[#858584] !text-[12px]'>{t("price")}</Text>
-                  <Text>{nft.price}</Text>
+         {activeTab === 'collection'
+            ? singleData.collections.map((collection, index) => (
+                <SingleCollectionCard key={index} item={collection} />
+              )) 
+              :getNFTs().map((nft, index) => (
+              <div key={index} className='w-[330px] nft-wrapper cursor-pointer rounded-[20px] overflow-hidden'>
+                <div className='w-[330px] overflow-hidden h-[296px]'>
+                  <CustomImage classList="!duration-300" src={`${process.env.NEXT_PUBLIC_API}/file/${nft.image}`} alt={nft.title || 'NFT'} W={330} H={330}/>
                 </div>
-                <div className='text-end'>
-                  <Text classList='!text-[#858584] !text-[12px]'>{t("highestBid")}</Text>
-                  <Text>0.33 wETH</Text>
+                <div className='py-[20px] px-[30px] bg-[#2B2B2B]'>
+                  <Heading classList='!mb-[5px]'>{nft.title}</Heading>
+                  <div className='flex items-center gap-[12px]'>
+                    <CustomImage classList="!duration-300" src={`${process.env.NEXT_PUBLIC_API}/file/${singleData?.image}`} alt={nft.title} W={24} H={24}/>
+                    <Text>{singleData.username}</Text>
+                  </div>
+                  <div className='flex justify-between mt-[25px]'>
+                    <div>
+                      <Text classList='!text-[#858584] !text-[12px]'>{t("price")}</Text>
+                      <Text>{nft.price}</Text>
+                    </div>
+                    <div className='text-end'>
+                      <Text classList='!text-[#858584] !text-[12px]'>{t("highestBid")}</Text>
+                      <Text>0.33 wETH</Text>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div>
-        ))}
+          ))}
         </div>
       </div>
+
+
     </div>
   )
 }

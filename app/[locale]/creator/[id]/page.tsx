@@ -1,5 +1,5 @@
 import { SingleCreatorType } from '@/@types/SingleCreatorType'
-import { Button, CustomImage, Heading, SingleCreatorcard, Text } from '@/components'
+import { Button, CustomImage, Heading,  Text } from '@/components'
 import SingleCreatorCard from '@/components/SingleCreatorcard'
 import { BrowserIcon, CopyIcon, DiscordIcon, InstagramIcon, PlusIcon, TwitterIcon, YouTubeIcon } from '@/icons'
 import { getRequest } from '@/server/getRequest'
@@ -11,11 +11,13 @@ const SingleCreator:FC<{params: {id: string}}> = async ({params}) => {
     const singleData: SingleCreatorType = await getRequest(`/user/${id}`)
      const t = await getTranslations('SingleCreatorContent')
 
+     console.log(singleData)
+
   return (
     <section className='py-1'>
       <div className='single-creator-wrapper w-full relative mb-[50px]'>
         <div className='containers'>
-        <CustomImage classList='!absolute !bottom-[-50px] md:left-auto md:right-auto left-0 right-0 md:mx-0 mx-auto rounded-[20px]' src={`${process.env.NEXT_PUBLIC_API}/file/${singleData.createdNFTs[0].image}`} W={120} H={120} alt='image'/>
+        <CustomImage classList='!absolute !bottom-[-50px] md:left-auto md:right-auto left-0 right-0 md:mx-0 mx-auto rounded-[20px]' src={`${process.env.NEXT_PUBLIC_API}/file/${singleData?.createdNFTs[0].image}`} W={120} H={120} alt='image'/>
         </div>
       </div>
 
